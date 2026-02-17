@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    transition: all 0.3 ease 0.3s;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #080710;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form{
+    background-color: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 400px;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.02);
+    position: relative;
+    z-index: 1;
+}
+.form::before, .form::after{
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    z-index: -1;
+}
+.form::before{
+    height: 200px;
+    width: 200px;
+    background-color: #FF3D00;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    filter: blur(100px);
+}
+.form::after{
+    height: 200px;
+    width: 200px;
+    background-color: #00838F;
+    opacity: 0.4;
+    bottom: 0;
+    right: 0;
+    filter: blur(100px);
+}
+
+
+.input{
+    background-color: rgba(255, 255, 255, 0.07);
+    height: 50px;
+    padding: 10px;
+    font-weight: 300;
+    width: 100%;
+
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    color: whitesmoke;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in;
+}
+.input:hover{
+    scale: 1.02;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.input:focus {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    scale: 1.05;
+}
+
+
+label{
+    margin-left: 8px;
+    margin-bottom: 2px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 38px;
+    color: whitesmoke;
+    text-shadow: 2px 2px #37474F;
+    transition: all 300ms ease-in 50ms;
+}
+/* ---------------------------------------------------------------------- */
+/* استایل عنوان (Header) */
+/* ---------------------------------------------------------------------- */
+h1{
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 38px;
+    color: whitesmoke; /* رنگ عادی متن (قبل از هاور) */
+    text-shadow: 2px 2px #37474F;
+    
+    /* تنظیمات اولیه برای انیمیشن گرادیانت */
+    transition: all 300ms ease-in 50ms;
+}
+h1:hover{
+    /* ۱. تعریف گرادیانت به عنوان پس‌زمینه */
+    background-image: linear-gradient(
+        45deg, 
+        #FBE9E7,  /* طلایی روشن */
+        #9FA8DA   /* نارنجی تیره */
+    ); 
+    
+    /* ۲. محدود کردن پس‌زمینه به کادر متن (استاندارد) */
+    background-clip: text;
+    
+    /* ۳. محدود کردن پس‌زمینه به کادر متن (برای سازگاری با کروم و سافاری) */
+    -webkit-background-clip: text; 
+    
+    /* ۴. شفاف کردن رنگ متن برای نمایش گرادیانت */
+    color: transparent; 
+    
+    /* *اختیاری:* می‌توانید سایه متن را برای دید بهتر گرادیانت در حالت هاور حذف کنید */
+    text-shadow: none; 
+}
+.submit{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 50px;
+    padding: 10px;
+    font-weight: 300;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-weight:bold ;
+    font-size: 16px;
+    color: #263238;
+    transition: all 360ms ease 80ms;
+    cursor: pointer;
+}
+.submit:hover{
+    scale: 0.9;
+    color: #4527A0;
+    background-image: linear-gradient(
+        45deg, 
+        #FBE9E7,
+        #9FA8DA  
+    );
+ 
+}
