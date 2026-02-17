@@ -100,37 +100,33 @@ h1{
     text-shadow: 2px 2px #37474F;
     transition: all 300ms ease-in 50ms;
 }
-/* ---------------------------------------------------------------------- */
-/* استایل عنوان (Header) */
-/* ---------------------------------------------------------------------- */
+
 h1{
     text-align: center;
     margin-bottom: 28px;
     font-size: 38px;
-    color: whitesmoke; /* رنگ عادی متن (قبل از هاور) */
+    color: whitesmoke; 
     text-shadow: 2px 2px #37474F;
     
-    /* تنظیمات اولیه برای انیمیشن گرادیانت */
     transition: all 300ms ease-in 50ms;
 }
 h1:hover{
-    /* ۱. تعریف گرادیانت به عنوان پس‌زمینه */
     background-image: linear-gradient(
         45deg, 
-        #FBE9E7,  /* طلایی روشن */
-        #9FA8DA   /* نارنجی تیره */
+        #FBE9E7,  
+        #9FA8DA  
     ); 
     
-    /* ۲. محدود کردن پس‌زمینه به کادر متن (استاندارد) */
+  
     background-clip: text;
     
-    /* ۳. محدود کردن پس‌زمینه به کادر متن (برای سازگاری با کروم و سافاری) */
+
     -webkit-background-clip: text; 
     
-    /* ۴. شفاف کردن رنگ متن برای نمایش گرادیانت */
+
     color: transparent; 
     
-    /* *اختیاری:* می‌توانید سایه متن را برای دید بهتر گرادیانت در حالت هاور حذف کنید */
+
     text-shadow: none; 
 }
 .submit{
@@ -158,3 +154,4 @@ h1:hover{
     );
  
 }
+
